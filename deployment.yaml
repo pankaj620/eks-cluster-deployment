@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-app
+  labels:
+    app: test-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-app
+  template:
+    metedata:
+      labels:
+        app: test-app
+    spec:
+      containers:
+      - name: flask-app
+        image: 62049/product-imag
+        ports:
+        - containerPort: 80
