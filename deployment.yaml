@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: 62049/product-imag
+        image: 62049/product-service
         ports:
         - containerPort: 80
