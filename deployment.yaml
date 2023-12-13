@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-app
+  name: test-app2
   labels:
-    app: test-app
+    app: test-app2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test-app
+      app: test-app2
   template:
     metadata:
       labels:
-        app: test-app
+        app: test-app2
     spec:
       containers:
-      - name: flask-app
+      - name: flask-app2
         image: 62049/afd
         ports:
         - containerPort: 80
