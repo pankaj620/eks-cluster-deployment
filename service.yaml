@@ -6,10 +6,9 @@ metadata:
     app: test-service
 spec:
   selector:
-    app: test-app
-  type: NodePort
+    app: ecommerce-app
+  type: LoadBalancer
   ports:
   - protocol: TCP
-    port: 3000
+    port: 5000
     targetPort: 80
-    nodePort: 30090
