@@ -7,7 +7,7 @@ metadata:
 spec:
   selector:
     app: ecommerce-app
-  type: LoadBalancer
+  type: NodePort
   ports:
   - protocol: TCP
     port: 5000
