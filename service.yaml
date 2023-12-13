@@ -6,7 +6,7 @@ metadata:
     app: test-service
 spec:
   selector:
-    app: ecommerce-app
+    app: test-app2
   type: NodePort
   ports:
   - protocol: TCP
